@@ -1,7 +1,6 @@
 <script lang="ts">
 	import { useQuery } from '@sanity/svelte-loader';
 	import Card from '../components/Card.svelte';
-	import Welcome from '../components/Welcome.svelte';
 	import type { PageData } from './$types';
 
 	export let data: PageData;
@@ -16,6 +15,6 @@
 			<Card {post} />
 		{/each}
 	{:else}
-		<Welcome />
+		<div></div>
 	{/if}
 </section>
