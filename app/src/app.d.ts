@@ -6,7 +6,7 @@ declare global {
 	namespace App {
 		// interface Error {}
 		interface Locals extends LoaderLocals {}
-		// interface PageData {}
+		interface PageData {}
 		// interface Platform {}
 	}
 }
