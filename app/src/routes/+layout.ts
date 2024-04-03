@@ -7,5 +7,5 @@ export const load: LayoutLoad = (event) => {
 	const { preview } = event.data;
 	// `@sanity/visual-editing/svelte` exports two helpers for setting and getting
 	// preview state on the client: `setPreviewing` and `isPreviewing`.
-	setPreviewing(preview);
+	// setPreviewing(preview);
 };

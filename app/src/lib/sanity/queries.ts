@@ -11,10 +11,9 @@ export const siteSettingsQuery = groq`*[_type == "general"][0]`;
 export interface Post {
 	_type: 'post';
 	_createdAt: string;
-	title?: string;
+	title: string;
 	slug: Slug;
-	excerpt?: string;
-	mainImage?: ImageAsset;
+	mainImage: ImageAsset;
 	body: PortableTextBlock[];
 }
 

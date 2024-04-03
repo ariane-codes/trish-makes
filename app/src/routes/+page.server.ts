@@ -8,6 +8,7 @@ export const load: PageServerLoad = async (event) => {
 	// We pass the data in a format that is easy for `useQuery` to consume in the
 	// corresponding `+page.svelte` file, but you can return the data in any
 	// format you like.
+	console.log(initial)
 	return {
 		query,
 		options: { initial }

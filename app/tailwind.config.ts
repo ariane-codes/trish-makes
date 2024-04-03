@@ -2,11 +2,10 @@
 import { join } from 'path';
 import type { Config } from 'tailwindcss';
 
-// 1. Import the Skeleton plugin
 import { skeleton } from '@skeletonlabs/tw-plugin';
+import { theme } from './src/theme';
 
 const config = {
-	// 2. Opt for dark mode to be handled via the class method
 	darkMode: 'class',
 	content: [
 		'./src/**/*.{html,js,svelte,ts}',
@@ -26,9 +25,8 @@ const config = {
 		extend: {},
 	},
 	plugins: [
-		// 4. Append the Skeleton plugin (after other plugins)
 		skeleton({
-			themes: { preset: [ "skeleton" ] }
+			themes: { custom: [ theme ] }
 		})
 	]
 } satisfies Config;

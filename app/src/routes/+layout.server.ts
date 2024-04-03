@@ -9,10 +9,10 @@ export const load: LayoutServerLoad = async (event) => {
 	// to the client by returning it here.
 
 	const initial = await loadQuery<SiteSettings>(siteSettingsQuery);
-
+	
 	return { 
 		preview, 
-		siteSettingsQuery: await {
+		siteSettingsQuery: {
 			query: siteSettingsQuery,
 			options: { initial }
 		},

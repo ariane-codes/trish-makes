@@ -3,5 +3,5 @@
 	import { useLiveMode } from '@sanity/svelte-loader';
 	import { client } from '$lib/sanity/client';
 
-	onMount(() => useLiveMode({ client }));
+	// onMount(() => useLiveMode({ client }));
 </script>
