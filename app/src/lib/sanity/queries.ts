@@ -23,7 +23,7 @@ export interface SiteSettings {
 	websiteSubtitle?: string;
 	email?: string;
 	instagram?: {
-		username?: string;
-		url?: string;
+		username: string;
+		url: string;
 	};
 }

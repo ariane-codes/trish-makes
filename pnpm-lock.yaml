@@ -32,6 +32,9 @@ importers:
       groq:
         specifier: ^3.33.0
         version: 3.33.0
+      lucide-svelte:
+        specifier: ^0.368.0
+        version: 0.368.0(svelte@4.2.12)
     devDependencies:
       '@portabletext/svelte':
         specifier: ^2.1.5
@@ -5856,6 +5859,14 @@ packages:
     engines: {node: '>=10'}
     dependencies:
       yallist: 4.0.0
+
+  /lucide-svelte@0.368.0(svelte@4.2.12):
+    resolution: {integrity: sha512-/uSazMXmY0cZzehGaE1SHQDtQrQBvAVR8UCEpNEjRKSy3yluSqtlGj7T5KvewJpP9kBDCKPgKVcKgdJgEzpRlw==}
+    peerDependencies:
+      svelte: ^3 || ^4 || ^5.0.0-next.42
+    dependencies:
+      svelte: 4.2.12
+    dev: false
 
   /magic-string@0.30.8:
     resolution: {integrity: sha512-ISQTe55T2ao7XtlAStud6qwYPZjE4GK1S/BeVPus4jrq6JuOnQ00YKQC581RWhR122W7msZV263KzVeLoqidyQ==}
