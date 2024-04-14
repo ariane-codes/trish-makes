@@ -17,7 +17,7 @@
 {#if loading}
 	<Loading />
 {:else}
-<AppShell class="pr-[200px] pl-[200px]">
+<AppShell class="md:pr-24 md:pl-24 lg:pr-[200px] lg:pl-[200px]">
 	<svelte:fragment slot="header"><Header {siteSettings} /></svelte:fragment>
 	<slot />
 </AppShell>
